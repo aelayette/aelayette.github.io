@@ -1,32 +1,27 @@
+
 title: "My Portfolio"
 author: "Aelayette"
 description: "A personal website built with GitHub Pages + Jekyll."
 
-# If your site is at username.github.io, leave baseurl empty ("")
-# If it's at username.github.io/project-name, set baseurl: "/project-name"
-baseurl: ""   
+baseurl: ""
 url: "https://aelayette.github.io"
 
-# GitHub Pages–supported theme
-theme: minima   # You can change this to any supported theme
+theme: jekyll-theme-cayman
 
-# Markdown + formatting settings
 markdown: kramdown
 kramdown:
   input: GFM
 
-# Plugins supported by GitHub Pages (safe list)
-plugins:
-  - jekyll-feed
+# No plugins are needed for Cayman theme
+plugins: []
 
-# Optional navigation menu example
+# Navigation (Cayman will show pages automatically if they exist)
 navigation:
   - title: Home
     url: /
   - title: About
     url: /about/
 
-# Exclude junk from build
 exclude:
   - Gemfile
   - Gemfile.lock
