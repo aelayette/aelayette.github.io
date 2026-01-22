@@ -15,13 +15,6 @@ kramdown:
 # No plugins are needed for Cayman theme
 plugins: []
 
-# Navigation (Cayman will show pages automatically if they exist)
-navigation:
-  - title: Home
-    url: /
-  - title: About
-    url: /about/
-
 exclude:
   - Gemfile
   - Gemfile.lock
