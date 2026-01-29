@@ -189,9 +189,9 @@ section.visible {
     font-size: var(--font-size-2xl);
     font-weight: 700;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 .nav-menu {
@@ -209,7 +209,8 @@ section.visible {
     transition: color var(--transition-fast), background-color var(--transition-fast);
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
     color: var(--primary-color);
     background-color: var(--bg-secondary);
 }

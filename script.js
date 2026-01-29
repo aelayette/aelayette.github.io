@@ -174,9 +174,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Scroll event for navbar
-    window.addEventListener('scroll', handleNavbarScroll);
-    
     // Contact form submission
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
@@ -224,9 +221,6 @@ const updateActiveNavLink = () => {
     });
 };
 
-// Update active link on scroll
-window.addEventListener('scroll', updateActiveNavLink);
-
 // ============================
 // Utility Functions
 // ============================
@@ -248,4 +242,4 @@ const debounce = (func, wait) => {
 window.addEventListener('scroll', debounce(() => {
     handleNavbarScroll();
     updateActiveNavLink();
-}, 10));
+}, 100));
