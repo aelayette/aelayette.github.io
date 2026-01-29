@@ -1,22 +1,283 @@
-                        <div class="contact-methods">
-                            <a href="mailto:payettekael@gmail.com" class="contact-card">
-                                <div class="contact-icon">📧</div>
-                                <h3>Email</h3>
-                                <p>payettekael@gmail.com</p>
-                            </a>
-                            <a href="tel:+15872019297" class="contact-card">
-                                <div class="contact-icon">📱</div>
-                                <h3>Phone</h3>
-                                <p>(587) 201-9297</p>
-                            </a>
-                            <a href="https://www.linkedin.com/in/kael-payette-7b0a54336/" target="_blank" rel="noopener noreferrer" class="contact-card">
-                                <div class="contact-icon">💼</div>
-                                <h3>LinkedIn</h3>
-                                <p>Kael Payette</p>
-                            </a>
-                            <a href="https://github.com/aelayette" target="_blank" rel="noopener noreferrer" class="contact-card">
-                                <div class="contact-icon">💻</div>
-                                <h3>GitHub</h3>
-                                <p>@aelayette</p>
-                            </a>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kael Payette - IT Programming Student Portfolio">
+    <meta name="author" content="Kael Payette">
+    <title>Kael Payette | IT Programming Student</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="logo">KP</a>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="sun-icon">☀️</span>
+                        <span class="moon-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="gradient-text">Kael Payette</span></h1>
+                <h2 class="hero-subtitle">IT Programming Student</h2>
+                <p class="hero-description">2nd year student at NSCC specializing in mobile/desktop applications and database-driven systems</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>2nd year IT Programming student with hands-on experience developing mobile/desktop applications and database-driven systems, with a strong foundation in troubleshooting, system logic, and detail orientation.</p>
+                    <p>Experienced with Windows and Linux environments, Git workflows, and structured project development, with the ability to communicate technical concepts clearly and support end users.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-label">📍 Location:</span>
+                            <span>Aylesford, NS</span>
                         </div>
+                        <div class="detail-item">
+                            <span class="detail-label">🎓 Education:</span>
+                            <span>NSCC, Lawrencetown</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">📅 Graduation:</span>
+                            <span>June 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Laravel</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">Android Studio</span>
+                        <span class="skill-tag">Jetpack Compose</span>
+                        <span class="skill-tag">Visual Studio Code</span>
+                        <span class="skill-tag">IntelliJ</span>
+                        <span class="skill-tag">Unreal Engine 5+</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases & Other</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Windows</span>
+                        <span class="skill-tag">Agile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">📱</div>
+                    <h3>Mobile Cake Ordering App</h3>
+                    <p>Developed a mobile ordering app allowing users to browse products, customize orders, and submit purchases using Jetpack Compose.</p>
+                    <div class="project-tech">
+                        <span>Android</span>
+                        <span>Kotlin</span>
+                        <span>Jetpack Compose</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">📚</div>
+                    <h3>C++ Library Management System</h3>
+                    <p>Developed a management system for tracking books, users, and borrowing/transaction records with focus on usability and data accuracy.</p>
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>Database Design</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🚨</div>
+                    <h3>S.I.R.E Incident Response Simulator</h3>
+                    <p class="project-status">Capstone Project - In Progress</p>
+                    <p>Collaborating in a team to develop a simulation tool focused on structured incident response processes.</p>
+                    <div class="project-tech">
+                        <span>Team Collaboration</span>
+                        <span>System Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Experience & Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>IT Programming Diploma</h3>
+                        <p class="timeline-org">NSCC, Lawrencetown, NS</p>
+                        <p class="timeline-date">2024 – Present (Graduate: June 2026)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Dairy Frozen Associate</h3>
+                        <p class="timeline-org">Walmart, Greenwood, NS</p>
+                        <p class="timeline-date">August 2024 – Present</p>
+                        <ul>
+                            <li>Work in fast-paced retail environment requiring organization and time management</li>
+                            <li>Collaborate with team members to maintain operational standards</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>High School Diploma</h3>
+                        <p class="timeline-org">West Kings District High School</p>
+                        <p class="timeline-date">Graduated: June 2024</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Thrift Store Employee</h3>
+                        <p class="timeline-org">Orbiting Trends, Cold Lake, AB</p>
+                        <p class="timeline-date">August 2022 – 2023</p>
+                        <ul>
+                            <li>Organized merchandise and prepared it for sale</li>
+                            <li>Collaborated in a small-team environment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Awards -->
+            <div class="awards-section">
+                <h3 class="subsection-title">Awards & Certifications</h3>
+                <div class="awards-grid">
+                    <div class="award-card">
+                        <div class="award-icon">🏆</div>
+                        <h4>Education Works Bursary</h4>
+                        <p>$1,810 + Books & Fees</p>
+                    </div>
+                    <div class="award-card">
+                        <div class="award-icon">🏆</div>
+                        <h4>Jason Connell Memorial Award</h4>
+                        <p>$1,000</p>
+                    </div>
+                    <div class="award-card">
+                        <div class="award-icon">🏆</div>
+                        <h4>Aylesford Lion's Club Bursary</h4>
+                        <p>$2,000</p>
+                    </div>
+                    <div class="award-card">
+                        <div class="award-icon">✅</div>
+                        <h4>WHMIS Certified</h4>
+                        <p>Safety Certification</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-description">I'm currently looking for opportunities and collaborations. Feel free to reach out!</p>
+                <div class="contact-methods">
+                    <a href="mailto:payettekael@gmail.com" class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>payettekael@gmail.com</p>
+                    </a>
+                    <a href="tel:+15872019297" class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>Phone</h3>
+                        <p>(587) 201-9297</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kael-payette-7b0a54336/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">💼</div>
+                        <h3>LinkedIn</h3>
+                        <p>Kael Payette</p>
+                    </a>
+                    <a href="https://github.com/aelayette" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">💻</div>
+                        <h3>GitHub</h3>
+                        <p>@aelayette</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Kael Payette. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
