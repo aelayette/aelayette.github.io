@@ -1,0 +1,22 @@
+
+title: "My Portfolio"
+author: "Aelayette"
+description: "A personal website built with GitHub Pages + Jekyll."
+
+baseurl: ""
+url: "https://aelayette.github.io"
+
+theme: jekyll-theme-cayman
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# No plugins are needed for Cayman theme
+plugins: []
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
