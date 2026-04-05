@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cake Ordering App — Android case study by Kael Payette. Kotlin, Jetpack Compose, SQLite." />
+  <meta name="author" content="Kael Payette" />
+  <title>Cake App — Kael Payette</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="../" class="nav-logo">KP<span>.</span></a>
+      <nav aria-label="Primary navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="primary-nav" role="list">
+          <li><a href="../">Home</a></li>
+          <li><a href="../projects/" aria-current="page">Projects</a></li>
+          <li><a href="../about/">About</a></li>
+          <li><a href="../resume/">Resume</a></li>
+          <li><a href="../growth/">Growth</a></li>
+          <li><a href="../contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-labelledby="cs-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="../projects/">Projects</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Cake App</span>
+        </nav>
+        <h1 id="cs-heading">Cake Ordering App</h1>
+        <p class="hero-sub">Android mobile app — Kotlin, Jetpack Compose, and SQLite local persistence</p>
+        <div class="hero-tags">
+          <span class="tag tag-dark">Mobile</span>
+          <span class="tag tag-dark">Android</span>
+          <span class="tag tag-dark">Solo Project</span>
+          <span class="tag tag-dark">Kotlin</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="at-a-glance" role="region" aria-label="Project at a glance">
+          <h2>At a Glance</h2>
+          <div class="glance-grid">
+            <div class="glance-item">
+              <p class="glance-label">Status</p>
+              <p class="glance-value">✅ Functional</p>
+            </div>
+            <div class="glance-item">
+              <p class="glance-label">Platform</p>
+              <p class="glance-value">Android</p>
+            </div>
+            <div class="glance-item">
+              <p class="glance-label">Team Size</p>
+              <p class="glance-value">Solo</p>
+            </div>
+            <div class="glance-item">
+              <p class="glance-label">My Role</p>
+              <p class="glance-value">Designer · Developer</p>
+            </div>
+            <div class="glance-item">
+              <p class="glance-label">IDE</p>
+              <p class="glance-value">Android Studio</p>
+            </div>
+            <div class="glance-item">
+              <p class="glance-label">Public Repo</p>
+              <p class="glance-value">Private / On request</p>
+            </div>
+            <div class="glance-item" style="grid-column: 1 / -1;">
+              <p class="glance-label">Tech Stack</p>
+              <div class="glance-tags">
+                <span class="tag tag-dark">Kotlin</span>
+                <span class="tag tag-dark">Jetpack Compose</span>
+                <span class="tag tag-dark">SQLite</span>
+                <span class="tag tag-dark">Android Studio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-study-layout">
+
+          <aside class="case-study-sidebar" aria-label="Project details">
+            <div class="sidebar-card">
+              <h3>Frontend</h3>
+              <div class="tech-list">
+                <div class="tech-item">
+                  <strong>Kotlin</strong>
+                  <span style="font-size:.8rem;color:var(--text-muted);">primary language</span>
+                </div>
+                <div class="tech-item">
+                  <strong>Jetpack Compose</strong>
+                  <span style="font-size:.8rem;color:var(--text-muted);">declarative UI toolkit</span>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-card">
+              <h3>Data</h3>
+              <div class="tech-list">
+                <div class="tech-item">
+                  <strong>SQLite</strong>
+                  <span style="font-size:.8rem;color:var(--text-muted);">local persistence</span>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-card">
+              <h3>Tooling</h3>
+              <div class="tech-list">
+                <div class="tech-item"><strong>Android Studio</strong></div>
+                <div class="tech-item"><strong>Git / GitHub</strong></div>
+                <div class="tech-item"><strong>Android Emulator</strong></div>
+              </div>
+            </div>
+          </aside>
+
+          <div class="case-study-main">
+
+            <div class="cs-section">
+              <h2>Project Overview</h2>
+              <p>
+                The Cake Ordering App is an Android application that allows users to browse a product catalogue,
+                configure a custom cake order (size, flavour, toppings), and submit it for processing. All order
+                data is stored locally using SQLite, making the app fully functional offline.
+              </p>
+              <p>
+                I built this project to deepen my understanding of Android development with Jetpack Compose
+                and to practise working with a structured local database from the ground up — without relying
+                on higher-level abstractions.
+              </p>
+            </div>
+
+            <div class="cs-section">
+              <h2>Problem &amp; Goal</h2>
+              <p>
+                I wanted to build a complete, realistic mobile app flow: browsing items, selecting options,
+                validating input, and persisting data across sessions — without using cloud services.
+              </p>
+              <div class="highlight-box">
+                <strong>Constraint I set myself:</strong> No external APIs — data must live entirely on-device,
+                using SQLite managed directly through Android's database APIs. This forced me to understand
+                schema design, queries, and cursor management at a lower level.
+              </div>
+            </div>
+
+            <div class="cs-section">
+              <h2>What I Built</h2>
+              <ul>
+                <li>Product listing screen with categories and item details (Jetpack Compose)</li>
+                <li>Custom order builder — size, flavour, and topping selections with validation</li>
+                <li>Order confirmation and summary view</li>
+                <li>Order history screen persisted in SQLite across app sessions</li>
+                <li>Basic navigation flow using Compose navigation</li>
+              </ul>
+            </div>
+
+            <div class="cs-section">
+              <h2>Technical Approach</h2>
+              <h3>Jetpack Compose UI</h3>
+              <p>
+                All screens are built declaratively with Jetpack Compose. This was my first substantial project
+                using Compose, so a lot of early work went into understanding state management — specifically
+                how <code>remember</code>, <code>mutableStateOf</code>, and state hoisting work together.
+              </p>
+              <h3>SQLite for Local Persistence</h3>
+              <p>
+                I chose to use SQLite directly (through Android's <code>SQLiteOpenHelper</code>) rather than
+                a higher-level ORM. This required writing raw SQL for schema creation, insertion, and querying —
+                which gave me a clearer picture of what's actually happening under the hood.
+              </p>
+              <div class="highlight-box">
+                <strong>Why not Room?</strong> Room ORM was not used in this version. Using the lower-level
+                SQLite API directly was an intentional learning choice. Room is the planned next step — see
+                "Next Improvements" below.
+              </div>
+            </div>
+
+            <div class="cs-section">
+              <h2>Screenshots</h2>
+              <p>
+                Add app screenshots to <code>assets/img/projects/cake-app/</code> and
+                update the <code>src</code> attributes below.
+              </p>
+              <div class="evidence-gallery">
+
+                <div class="evidence-card">
+                  <div class="evidence-img">
+                    <div class="evidence-placeholder">
+                      <span class="ph-icon">🍰</span>
+                      <span class="ph-label">Product Listing</span>
+                    </div>
+                  </div>
+                  <div class="evidence-caption">
+                    <strong>Product Listing Screen</strong>
+                    <p>Cake catalogue with categories and item previews.</p>
+                    <span class="evidence-proof">Proves: Compose UI · Navigation</span>
+                  </div>
+                </div>
+
+                <div class="evidence-card">
+                  <div class="evidence-img">
+                    <div class="evidence-placeholder">
+                      <span class="ph-icon">🎂</span>
+                      <span class="ph-label">Order Builder</span>
+                    </div>
+                  </div>
+                  <div class="evidence-caption">
+                    <strong>Custom Order Builder</strong>
+                    <p>Size, flavour, and topping selection with real-time price update.</p>
+                    <span class="evidence-proof">Proves: State Management · UX Design</span>
+                  </div>
+                </div>
+
+                <div class="evidence-card">
+                  <div class="evidence-img">
+                    <div class="evidence-placeholder">
+                      <span class="ph-icon">📋</span>
+                      <span class="ph-label">Order History</span>
+                    </div>
+                  </div>
+                  <div class="evidence-caption">
+                    <strong>Order History Screen</strong>
+                    <p>Past orders retrieved from SQLite and displayed in a scrollable list.</p>
+                    <span class="evidence-proof">Proves: SQLite Persistence · Data Retrieval</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="cs-section">
+              <h2>Challenges &amp; What I Learned</h2>
+              <h3>State management in Compose</h3>
+              <p>
+                Getting comfortable with Compose's reactive state model took real effort. The key insight was
+                that UI should be a pure function of state — once I internalized that, component design became
+                much more intuitive.
+              </p>
+              <h3>Schema design for a real use case</h3>
+              <p>
+                Designing the SQLite schema for orders with multiple customisation options (multi-valued
+                selections) required thinking through normalization and join queries. I made mistakes early
+                and refactored the schema partway through — a useful real-world lesson in planning ahead.
+              </p>
+              <h3>Testing on emulators vs. real devices</h3>
+              <p>
+                Behaviour differences between the Android emulator and a physical device taught me to test
+                both — particularly around touch targets and keyboard behaviour.
+              </p>
+            </div>
+
+            <div class="cs-section">
+              <h2>Next Improvements</h2>
+              <ul>
+                <li>
+                  <strong>Migrate from raw SQLite to Room ORM</strong> — Room provides compile-time
+                  SQL validation, type-safe DAOs, and LiveData/Flow integration, making the data layer much
+                  safer and more maintainable
+                </li>
+                <li>Implement the MVVM architecture pattern to cleanly separate UI and data layers</li>
+                <li>Add input validation with user-friendly error messages</li>
+                <li>Introduce unit tests for data-layer logic using JUnit</li>
+                <li>Add a simple admin view for browsing and managing submitted orders</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <span>&copy; 2026 Kael Payette</span>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="../projects/">← All Projects</a>
+          <a href="../about/">About</a>
+          <a href="../resume/">Resume</a>
+          <a href="../contact/">Contact</a>
+          <a href="https://github.com/aelayette" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

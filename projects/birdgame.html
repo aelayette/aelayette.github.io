@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Birdgame — Unreal Engine 5 game case study by Kael Payette." />
+  <meta name="author" content="Kael Payette" />
+  <title>Birdgame — Kael Payette</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="../" class="nav-logo">KP<span>.</span></a>
+      <nav aria-label="Primary navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="primary-nav" role="list">
+          <li><a href="../">Home</a></li>
+          <li><a href="../projects/" aria-current="page">Projects</a></li>
+          <li><a href="../about/">About</a></li>
+          <li><a href="../resume/">Resume</a></li>
+          <li><a href="../growth/">Growth</a></li>
+          <li><a href="../contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-labelledby="cs-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="../projects/">Projects</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Birdgame</span>
+        </nav>
+        <h1 id="cs-heading">Birdgame</h1>
+        <p class="hero-sub">Unreal Engine 5 game — custom level design, Blueprint scripting, and original gameplay</p>
+        <div class="hero-tags">
+          <span class="tag tag-dark">Game Dev</span>
+          <span class="tag tag-dark">Unreal Engine 5</span>
+          <span class="tag tag-dark">In Development</span>
+          <span class="tag tag-dark">Solo Project</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="at-a-glance" role="region" aria-label="Project at a glance">
+          <h2>At a Glance</h2>
+          <div class="glance-grid">
+            <div class="glance-item">
+              <p class="glance-label">Status</p>
+              <p class="glance-value">🔧 Active Development</p>
+            </div>
+            <div class="glance-item">
+              <p class="glance-label">Started</p>
+              <p class="glance-value">2024 — ongoing</p>
+            </div>
+            <div class="glance-item">
+              <p class="glance-label">Team Size</p>
+              <p class="glance-value">Solo</p>
+            </div>
+            <div class="glance-item">
+              <p class="glance-label">My Role</p>
+              <p class="glance-value">Designer · Developer</p>
+            </div>
+            <div class="glance-item">
+              <p class="glance-label">Engine</p>
+              <p class="glance-value">Unreal Engine 5</p>
+            </div>
+            <div class="glance-item">
+              <p class="glance-label">Public Repo</p>
+              <p class="glance-value">Not available (see below)</p>
+            </div>
+            <div class="glance-item" style="grid-column: 1 / -1;">
+              <p class="glance-label">Tech Stack</p>
+              <div class="glance-tags">
+                <span class="tag tag-dark">Unreal Engine 5</span>
+                <span class="tag tag-dark">C++</span>
+                <span class="tag tag-dark">Blueprints</span>
+                <span class="tag tag-dark">Git LFS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-study-layout">
+
+          <aside class="case-study-sidebar" aria-label="Project details">
+            <div class="sidebar-card">
+              <h3>Why No Public Repo?</h3>
+              <p style="font-size:.875rem; color:var(--text-muted); line-height:1.6;">
+                Unreal Engine projects include large binary assets (textures, meshes, audio, compiled shaders)
+                that are unsuitable for standard Git hosting without Git LFS. The project is still in active
+                development and assets are not yet ready for public release. Evidence is shared here directly
+                via screenshots and recordings.
+              </p>
+            </div>
+            <div class="sidebar-card">
+              <h3>Tools</h3>
+              <div class="tech-list">
+                <div class="tech-item"><strong>Unreal Engine 5</strong></div>
+                <div class="tech-item"><strong>C++</strong> <span style="font-size:.8rem;color:var(--text-muted);">custom gameplay classes</span></div>
+                <div class="tech-item"><strong>Blueprint Visual Scripting</strong></div>
+                <div class="tech-item"><strong>Git + Git LFS</strong> <span style="font-size:.8rem;color:var(--text-muted);">local version control</span></div>
+              </div>
+            </div>
+          </aside>
+
+          <div class="case-study-main">
+
+            <div class="cs-section">
+              <h2>About the Project</h2>
+              <p>
+                Birdgame is an Unreal Engine 5 game I have been designing and building independently.
+                It combines custom level design with Blueprint-driven gameplay mechanics and original game logic
+                implemented in both C++ and UE5's visual scripting system.
+              </p>
+              <p>
+                The project is an ongoing creative and technical challenge — it is where I explore game-systems
+                thinking, 3D environment design, and the Unreal toolchain at a deeper level than coursework provides.
+              </p>
+            </div>
+
+            <div class="cs-section">
+              <h2>What I Built</h2>
+              <ul>
+                <li>Custom level environment designed from the ground up in UE5's World Partition editor</li>
+                <li>Player character class with movement mechanics implemented in C++</li>
+                <li>Enemy behaviour and interaction logic built using Blueprint Visual Scripting</li>
+                <li>Game state management (win/lose conditions, scene transitions)</li>
+                <li>Lighting, atmosphere, and environmental storytelling passes</li>
+              </ul>
+              <div class="highlight-box">
+                <strong>Approach:</strong> I use C++ for performance-critical or reusable gameplay systems and
+                Blueprints for rapid iteration on level-specific logic — matching how professional UE5 teams
+                typically split responsibilities.
+              </div>
+            </div>
+
+            <div class="cs-section">
+              <h2>Screenshots &amp; Media</h2>
+              <p>
+                Drop gameplay screenshots and recordings into
+                <code>assets/img/projects/birdgame/</code> and update the
+                <code>src</code> attributes below to display them.
+              </p>
+              <div class="evidence-gallery">
+
+                <div class="evidence-card">
+                  <div class="evidence-img">
+                    <div class="evidence-placeholder">
+                      <span class="ph-icon">🌍</span>
+                      <span class="ph-label">Level Overview</span>
+                    </div>
+                  </div>
+                  <div class="evidence-caption">
+                    <strong>Level Environment — Overview</strong>
+                    <p>Top-down or wide shot of the main level environment.</p>
+                    <span class="evidence-proof">Proves: Level Design · Environmental Art</span>
+                  </div>
+                </div>
+
+                <div class="evidence-card">
+                  <div class="evidence-img">
+                    <div class="evidence-placeholder">
+                      <span class="ph-icon">🎮</span>
+                      <span class="ph-label">Gameplay Screenshot</span>
+                    </div>
+                  </div>
+                  <div class="evidence-caption">
+                    <strong>Gameplay — In Action</strong>
+                    <p>Player character in an active gameplay scenario.</p>
+                    <span class="evidence-proof">Proves: Gameplay Systems · Mechanics</span>
+                  </div>
+                </div>
+
+                <div class="evidence-card">
+                  <div class="evidence-img">
+                    <div class="evidence-placeholder">
+                      <span class="ph-icon">🧠</span>
+                      <span class="ph-label">Blueprint / Editor View</span>
+                    </div>
+                  </div>
+                  <div class="evidence-caption">
+                    <strong>Blueprint Graph or Editor</strong>
+                    <p>A look inside a Blueprint or the UE5 editor to show technical work.</p>
+                    <span class="evidence-proof">Proves: Blueprint Scripting · Technical Depth</span>
+                  </div>
+                </div>
+
+                <div class="evidence-card">
+                  <div class="evidence-img">
+                    <div class="evidence-placeholder">
+                      <span class="ph-icon">✨</span>
+                      <span class="ph-label">Lighting / Atmosphere</span>
+                    </div>
+                  </div>
+                  <div class="evidence-caption">
+                    <strong>Environment Lighting Pass</strong>
+                    <p>A scene highlighting lighting and atmosphere design choices.</p>
+                    <span class="evidence-proof">Proves: Visual Polish · Art Direction</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="cs-section">
+              <h2>Challenges &amp; What I Learned</h2>
+              <h3>Learning the UE5 ecosystem</h3>
+              <p>
+                Unreal Engine has a steep learning curve. I invested significant time understanding how the
+                engine manages assets, how the renderer works, and how C++ classes integrate with the Blueprint
+                inheritance hierarchy.
+              </p>
+              <h3>Managing binary assets in version control</h3>
+              <p>
+                Large asset files are genuinely difficult to manage with standard Git. Using Git LFS locally
+                taught me firsthand why binary-heavy projects require a different approach to version control —
+                a real-world constraint that many developers don't encounter until they hit it.
+              </p>
+              <h3>Scope management as a solo developer</h3>
+              <p>
+                Without a team to set boundaries, scope creep is a constant risk. I'm practising defining
+                clear milestones and shipping small, playable builds rather than waiting for a "complete" product.
+              </p>
+            </div>
+
+            <div class="cs-section">
+              <h2>Next Steps</h2>
+              <ul>
+                <li>Complete the core gameplay loop (a fully playable first level)</li>
+                <li>Add audio design — ambient sounds and feedback effects</li>
+                <li>Polish player feedback (hit reactions, UI indicators)</li>
+                <li>Package and record a full gameplay demo video</li>
+                <li>Explore packaging for Windows distribution</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <span>&copy; 2026 Kael Payette</span>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="../projects/">← All Projects</a>
+          <a href="../about/">About</a>
+          <a href="../resume/">Resume</a>
+          <a href="../contact/">Contact</a>
+          <a href="https://github.com/aelayette" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
