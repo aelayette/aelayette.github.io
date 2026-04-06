@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="S.I.R.E. Case Study — Structured Incident Response Engine. Kael Payette's capstone team project." />
+  <meta name="author" content="Kael Payette" />
+  <title>S.I.R.E. Case Study — Kael Payette</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="../" class="nav-logo">KP<span>.</span></a>
+      <nav aria-label="Primary navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="primary-nav" role="list">
+          <li><a href="../">Home</a></li>
+          <li><a href="../projects/" aria-current="page">Projects</a></li>
+          <li><a href="../about/">About</a></li>
+          <li><a href="../resume/">Resume</a></li>
+          <li><a href="../growth/">Growth</a></li>
+          <li><a href="../contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══ PAGE HERO ═══ -->
+    <section class="page-hero" aria-labelledby="cs-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="../projects/">Projects</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">S.I.R.E.</span>
+        </nav>
+        <h1 id="cs-heading">S.I.R.E.</h1>
+        <p class="hero-sub">Structured Incident Response Engine — real-time, multi-user simulation platform</p>
+        <div class="hero-tags">
+          <span class="tag tag-dark">Capstone</span>
+          <span class="tag tag-dark">Team Project</span>
+          <span class="tag tag-dark">Live Demo</span>
+          <span class="tag tag-dark">NSCC Showcase</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTENT ═══ -->
+    <section class="section">
+      <div class="container">
+
+        <!-- At a Glance -->
+        <div class="at-a-glance" role="region" aria-label="Project at a glance">
+          <h2>At a Glance</h2>
+          <div class="glance-grid">
+            <div class="glance-item">
+              <p class="glance-label">Status</p>
+              <p class="glance-value">✅ Complete — Live</p>
+            </div>
+            <div class="glance-item">
+              <p class="glance-label">Timeline</p>
+              <p class="glance-value">Jan 2025 – Apr 2025</p>
+            </div>
+            <div class="glance-item">
+              <p class="glance-label">Team Size</p>
+              <p class="glance-value">5 people</p>
+            </div>
+            <div class="glance-item">
+              <p class="glance-label">My Role</p>
+              <p class="glance-value">Repo owner · Docs · QA · Coord.</p>
+            </div>
+            <div class="glance-item">
+              <p class="glance-label">Platform</p>
+              <p class="glance-value">Web (browser-based)</p>
+            </div>
+            <div class="glance-item">
+              <p class="glance-label">Live Demo</p>
+              <p class="glance-value">
+                <a href="https://aelayette.github.io/sire-simulator/" target="_blank" rel="noopener noreferrer"
+                   style="color:var(--accent);">aelayette.github.io/sire-simulator/ ↗</a>
+              </p>
+            </div>
+            <div class="glance-item" style="grid-column: 1 / -1;">
+              <p class="glance-label">Tech Stack</p>
+              <div class="glance-tags">
+                <span class="tag tag-dark">React</span>
+                <span class="tag tag-dark">Vite</span>
+                <span class="tag tag-dark">MUI</span>
+                <span class="tag tag-dark">React Router</span>
+                <span class="tag tag-dark">Node.js</span>
+                <span class="tag tag-dark">Express (ESM)</span>
+                <span class="tag tag-dark">Socket.IO (WSS)</span>
+                <span class="tag tag-dark">Namespaced Rooms</span>
+                <span class="tag tag-dark">Docker</span>
+                <span class="tag tag-dark">GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main + Sidebar -->
+        <div class="case-study-layout">
+
+          <!-- SIDEBAR -->
+          <aside class="case-study-sidebar" aria-label="Project links and tech details">
+
+            <div class="sidebar-card">
+              <h3>Links</h3>
+              <div class="sidebar-links">
+                <a href="https://aelayette.github.io/sire-simulator/" target="_blank" rel="noopener noreferrer">
+                  🌐 Live Demo ↗
+                </a>
+                <a href="https://github.com/aelayette/sire-simulator" target="_blank" rel="noopener noreferrer">
+                  💻 GitHub Repo ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>Frontend</h3>
+              <div class="tech-list">
+                <div class="tech-item"><strong>React + Vite</strong></div>
+                <div class="tech-item"><strong>MUI (Material UI)</strong></div>
+                <div class="tech-item"><strong>React Router</strong></div>
+              </div>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>Backend</h3>
+              <div class="tech-list">
+                <div class="tech-item"><strong>Node.js</strong></div>
+                <div class="tech-item"><strong>Express</strong> <span style="font-size:.8rem;color:var(--text-muted);">ESM modules</span></div>
+                <div class="tech-item"><strong>Socket.IO</strong> <span style="font-size:.8rem;color:var(--text-muted);">WSS, namespaced rooms</span></div>
+              </div>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>DevOps</h3>
+              <div class="tech-list">
+                <div class="tech-item"><strong>Docker</strong> <span style="font-size:.8rem;color:var(--text-muted);">containerised</span></div>
+                <div class="tech-item"><strong>GitHub</strong> <span style="font-size:.8rem;color:var(--text-muted);">repo + CI</span></div>
+                <div class="tech-item"><strong>Cloud Hosting</strong> <span style="font-size:.8rem;color:var(--text-muted);">Render / Railway</span></div>
+              </div>
+            </div>
+
+          </aside>
+
+          <!-- MAIN CONTENT -->
+          <div class="case-study-main">
+
+            <!-- Overview poster -->
+            <div class="cs-section">
+              <h2>Project Overview</h2>
+              <div class="evidence-card" style="margin-bottom:1.5rem; max-width:640px;">
+                <div class="evidence-img" style="aspect-ratio:16/9;">
+                  <!-- Replace with: assets/img/projects/sire/overview-poster.png -->
+                  <div class="evidence-placeholder">
+                    <span class="ph-icon">📄</span>
+                    <span class="ph-label">Project Poster / One-Page Overview</span>
+                    <span style="font-size:.75rem; opacity:.5; margin-top:.25rem;">
+                      Place file at:<br/>assets/img/projects/sire/overview-poster.png
+                    </span>
+                  </div>
+                </div>
+                <div class="evidence-caption">
+                  <strong>Project Poster</strong>
+                  <p>One-page technical overview presented at the NSCC IT showcase.</p>
+                </div>
+              </div>
+
+              <p>
+                <strong>S.I.R.E.</strong> (Structured Incident Response Engine) is a real-time, browser-based simulation
+                platform that lets teams practise structured incident-response procedures in a controlled,
+                multiplayer environment. It was built as a capstone project by a five-person team and presented
+                at the NSCC IT Showcase.
+              </p>
+              <p>
+                The platform connects multiple users through WebSocket rooms, assigns roles, and walks participants
+                through simulated incident scenarios with live state updates shared across all connected clients.
+              </p>
+            </div>
+
+            <!-- Problem -->
+            <div class="cs-section">
+              <h2>Problem &amp; Goal</h2>
+              <p>
+                Incident response training often relies on static documentation or expensive in-person drills.
+                Our goal was to create an accessible, browser-based simulation where teams could practice
+                realistic response workflows together — in real time, from any machine.
+              </p>
+              <div class="highlight-box">
+                <strong>Core challenge:</strong> Keep every connected client in sync through a live scenario —
+                role assignments, state transitions, and event timelines — without a traditional database,
+                using only in-memory server state and WebSocket events.
+              </div>
+            </div>
+
+            <!-- My Contributions -->
+            <div class="cs-section">
+              <h2>My Contributions</h2>
+              <p>On a five-person team, every role matters. Here is what I owned:</p>
+              <div class="contributions-list">
+                <div class="contribution-item">
+                  <span class="contribution-icon">🗂️</span>
+                  <div class="contribution-text">
+                    <strong>Repository Ownership</strong>
+                    <span>Created and maintained the GitHub repo; set branching conventions and merge standards</span>
+                  </div>
+                </div>
+                <div class="contribution-item">
+                  <span class="contribution-icon">📋</span>
+                  <div class="contribution-text">
+                    <strong>Documentation</strong>
+                    <span>Authored the technical poster, communications plan, and project README</span>
+                  </div>
+                </div>
+                <div class="contribution-item">
+                  <span class="contribution-icon">🤝</span>
+                  <div class="contribution-text">
+                    <strong>Team Coordination</strong>
+                    <span>Ran standups, tracked blockers, and kept the team aligned on milestones</span>
+                  </div>
+                </div>
+                <div class="contribution-item">
+                  <span class="contribution-icon">🔍</span>
+                  <div class="contribution-text">
+                    <strong>QA &amp; Testing</strong>
+                    <span>Wrote and executed test plans; filed and tracked bugs through to resolution</span>
+                  </div>
+                </div>
+                <div class="contribution-item">
+                  <span class="contribution-icon">🎤</span>
+                  <div class="contribution-text">
+                    <strong>Showcase Presentation</strong>
+                    <span>Co-presented the project at the NSCC IT Showcase to industry guests</span>
+                  </div>
+                </div>
+                <div class="contribution-item">
+                  <span class="contribution-icon">📐</span>
+                  <div class="contribution-text">
+                    <strong>Standards &amp; Process</strong>
+                    <span>Established code-review norms, commit conventions, and PR templates</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Architecture -->
+            <div class="cs-section">
+              <h2>Architecture &amp; Technical Approach</h2>
+              <h3>Frontend</h3>
+              <p>
+                Built with <strong>React + Vite</strong> for fast iteration. <strong>MUI (Material UI)</strong>
+                provided a consistent component library, and <strong>React Router</strong> handled client-side
+                navigation between the lobby, scenario selection, and active simulation views.
+              </p>
+              <h3>Backend</h3>
+              <p>
+                A <strong>Node.js + Express</strong> server (written in ESM) manages session state in memory
+                and acts as the source of truth for all scenario data. <strong>Socket.IO</strong> powers the
+                real-time layer using WebSocket Secure (WSS) connections, with <em>namespaced rooms</em>
+                isolating each simulation session so teams don't interfere with one another.
+              </p>
+              <h3>DevOps &amp; Deployment</h3>
+              <p>
+                The application is containerised with <strong>Docker</strong> for environment consistency.
+                Deployment is managed through a cloud provider (Render or Railway), with the frontend
+                static build hosted separately. Source control and CI workflows run through <strong>GitHub</strong>.
+              </p>
+              <div class="highlight-box">
+                <strong>Key design decision:</strong> Namespaced Socket.IO rooms allow multiple independent
+                simulation sessions to run concurrently on the same server — no dedicated process per session required.
+              </div>
+            </div>
+
+            <!-- Evidence Gallery -->
+            <div class="cs-section">
+              <h2>Evidence Gallery</h2>
+              <p>
+                Screenshots and photos from development and the NSCC Showcase.
+                Replace placeholder cards by adding image files to <code>assets/img/projects/sire/</code>.
+              </p>
+              <div class="evidence-gallery">
+
+                <div class="evidence-card">
+                  <div class="evidence-img">
+                    <!-- assets/img/projects/sire/team-showcase.jpg -->
+                    <div class="evidence-placeholder">
+                      <span class="ph-icon">📸</span>
+                      <span class="ph-label">Team Showcase Photo</span>
+                    </div>
+                  </div>
+                  <div class="evidence-caption">
+                    <strong>Team at NSCC IT Showcase</strong>
+                    <p>Our five-person team presenting S.I.R.E. to industry guests at the showcase.</p>
+                    <span class="evidence-proof">Proves: Teamwork · Communication · Delivery</span>
+                  </div>
+                </div>
+
+                <div class="evidence-card">
+                  <div class="evidence-img">
+                    <!-- assets/img/projects/sire/ui-lobby.png -->
+                    <div class="evidence-placeholder">
+                      <span class="ph-icon">��️</span>
+                      <span class="ph-label">Lobby UI Screenshot</span>
+                    </div>
+                  </div>
+                  <div class="evidence-caption">
+                    <strong>Lobby / Session Join Screen</strong>
+                    <p>Users enter a room code to join an active simulation session.</p>
+                    <span class="evidence-proof">Proves: UI Design · Real-time Connectivity</span>
+                  </div>
+                </div>
+
+                <div class="evidence-card">
+                  <div class="evidence-img">
+                    <!-- assets/img/projects/sire/ui-simulation.png -->
+                    <div class="evidence-placeholder">
+                      <span class="ph-icon">🚨</span>
+                      <span class="ph-label">Active Simulation UI</span>
+                    </div>
+                  </div>
+                  <div class="evidence-caption">
+                    <strong>Active Simulation View</strong>
+                    <p>Live incident scenario in progress — roles assigned, events updating in real time.</p>
+                    <span class="evidence-proof">Proves: Socket.IO Integration · State Management</span>
+                  </div>
+                </div>
+
+                <div class="evidence-card">
+                  <div class="evidence-img">
+                    <!-- assets/img/projects/sire/overview-poster.png -->
+                    <div class="evidence-placeholder">
+                      <span class="ph-icon">📄</span>
+                      <span class="ph-label">Technical Poster</span>
+                    </div>
+                  </div>
+                  <div class="evidence-caption">
+                    <strong>Project Poster (Overview)</strong>
+                    <p>One-page technical poster created for the NSCC showcase audience.</p>
+                    <span class="evidence-proof">Proves: Documentation · Communication</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Challenges -->
+            <div class="cs-section">
+              <h2>Challenges &amp; What I Learned</h2>
+              <h3>Keeping state in sync across clients</h3>
+              <p>
+                The hardest part was ensuring that all connected clients saw the same scenario state at all times.
+                We handled this by making the server the single source of truth and re-broadcasting full state
+                snapshots on every meaningful event, rather than trying to track deltas per client.
+              </p>
+              <h3>Coordinating a five-person team</h3>
+              <p>
+                Communication overhead was real. I learned that clear PR templates, a shared branching convention,
+                and brief but consistent standups were more effective than any single tool. Small process investments
+                paid off quickly.
+              </p>
+              <h3>Documentation as a first-class deliverable</h3>
+              <p>
+                Writing the poster and comms plan forced me to articulate the architecture in plain language —
+                which in turn surfaced design gaps earlier than code review alone would have.
+              </p>
+            </div>
+
+            <!-- Results -->
+            <div class="cs-section">
+              <h2>Results &amp; Next Steps</h2>
+              <ul>
+                <li>Successfully shipped and demonstrated at the NSCC IT Showcase</li>
+                <li>Live demo remains publicly accessible at the project URL</li>
+                <li>Received positive feedback from industry guests on real-time responsiveness</li>
+              </ul>
+              <h3>Next improvements</h3>
+              <ul>
+                <li>Persistent scenario logs (database-backed, rather than in-memory)</li>
+                <li>Instructor dashboard for managing multiple concurrent sessions</li>
+                <li>Expanded scenario library with branching decision trees</li>
+                <li>Unit and integration test coverage on the Socket.IO event layer</li>
+              </ul>
+            </div>
+
+          </div><!-- /case-study-main -->
+        </div><!-- /case-study-layout -->
+      </div><!-- /container -->
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <span>&copy; 2026 Kael Payette</span>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="../projects/">← All Projects</a>
+          <a href="../about/">About</a>
+          <a href="../resume/">Resume</a>
+          <a href="../contact/">Contact</a>
+          <a href="https://github.com/aelayette" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
