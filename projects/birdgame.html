@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
 </head>
 <body>
 
@@ -29,6 +30,10 @@
           <li><a href="../contact/">Contact</a></li>
         </ul>
       </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </div>
   </header>
 
@@ -62,11 +67,11 @@
           <div class="glance-grid">
             <div class="glance-item">
               <p class="glance-label">Status</p>
-              <p class="glance-value">🔧 Prototype / In Progress</p>
+              <p class="glance-value">Prototype / In Progress</p>
             </div>
             <div class="glance-item">
               <p class="glance-label">Started</p>
-              <p class="glance-value">2024 — ongoing</p>
+              <p class="glance-value">Jan 2026 — ongoing</p>
             </div>
             <div class="glance-item">
               <p class="glance-label">Team Size</p>
@@ -87,10 +92,10 @@
             <div class="glance-item" style="grid-column: 1 / -1;">
               <p class="glance-label">Tech Stack</p>
               <div class="glance-tags">
-                <span class="tag tag-dark">Unreal Engine 5</span>
+                <span class="tag tag-dark">Unreal Engine 5.0.3</span>
                 <span class="tag tag-dark">C++</span>
                 <span class="tag tag-dark">Blueprints</span>
-                <span class="tag tag-dark">Git LFS</span>
+                <span class="tag tag-dark">Visual Studio 2022</span>
               </div>
             </div>
           </div>
@@ -103,18 +108,18 @@
               <h3>Why No Public Repo?</h3>
               <p style="font-size:.875rem; color:var(--text-muted); line-height:1.6;">
                 Unreal Engine projects include large binary assets (textures, meshes, audio, compiled shaders)
-                that are unsuitable for standard Git hosting without Git LFS. The project is still in active
-                development and assets are not yet ready for public release. Evidence is shared here directly
+                that are unsuitable for standard Git hosting. The project is still in active development
+                and assets are not yet ready for public release. Evidence is shared here directly
                 via screenshots and recordings.
               </p>
             </div>
             <div class="sidebar-card">
               <h3>Tools</h3>
               <div class="tech-list">
-                <div class="tech-item"><strong>Unreal Engine 5</strong></div>
+                <div class="tech-item"><strong>Unreal Engine 5.0.3</strong></div>
+                <div class="tech-item"><strong>Visual Studio 2022</strong> <span style="font-size:.8rem;color:var(--text-muted);">C++ development</span></div>
                 <div class="tech-item"><strong>C++</strong> <span style="font-size:.8rem;color:var(--text-muted);">custom gameplay classes</span></div>
                 <div class="tech-item"><strong>Blueprint Visual Scripting</strong></div>
-                <div class="tech-item"><strong>Git + Git LFS</strong> <span style="font-size:.8rem;color:var(--text-muted);">local version control</span></div>
               </div>
             </div>
           </aside>
@@ -124,9 +129,9 @@
             <div class="cs-section">
               <h2>About the Project</h2>
               <p>
-                Deserted is an Unreal Engine 5 game I have been designing and building independently.
-                It combines custom level design with Blueprint-driven gameplay mechanics and original game logic
-                implemented in both C++ and UE5's visual scripting system.
+                Deserted is an Unreal Engine 5 game I started following a Udemy course to learn the basics
+                of UE5 development, then continued building independently once I had a grounding in the
+                engine fundamentals. It is a solo project I keep working on outside of coursework.
               </p>
               <p>
                 The project is an ongoing creative and technical challenge — it is where I explore game-systems
@@ -138,16 +143,10 @@
               <h2>What I Built</h2>
               <ul>
                 <li>Custom level environment designed from the ground up in UE5's World Partition editor</li>
-                <li>Player character class with movement mechanics implemented in C++</li>
-                <li>Enemy behaviour and interaction logic built using Blueprint Visual Scripting</li>
-                <li>Game state management (win/lose conditions, scene transitions)</li>
+                <li>Controllable Pawn class with movement mechanics implemented in C++</li>
+                <li>Gameplay management (sound effects, camera delay)</li>
                 <li>Lighting, atmosphere, and environmental storytelling passes</li>
               </ul>
-              <div class="highlight-box">
-                <strong>Approach:</strong> I use C++ for performance-critical or reusable gameplay systems and
-                Blueprints for rapid iteration on level-specific logic — matching how professional UE5 teams
-                typically split responsibilities.
-              </div>
             </div>
 
             <div class="cs-section">
@@ -212,7 +211,6 @@
                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 </video>
                 <div class="evidence-placeholder" style="display:none; aspect-ratio:16/9;">
-                  <span class="ph-icon">🎬</span>
                   <span class="ph-label">Gameplay Video</span>
                   <span style="font-size:.75rem; opacity:.6; margin-top:.25rem;">
                     Upload <code>deserted-gameplay.mp4</code> to<br/>
@@ -226,15 +224,10 @@
               <h2>Challenges &amp; What I Learned</h2>
               <h3>Learning the UE5 ecosystem</h3>
               <p>
-                Unreal Engine has a steep learning curve. I invested significant time understanding how the
-                engine manages assets, how the renderer works, and how C++ classes integrate with the Blueprint
-                inheritance hierarchy.
-              </p>
-              <h3>Managing binary assets in version control</h3>
-              <p>
-                Large asset files are genuinely difficult to manage with standard Git. Using Git LFS locally
-                taught me firsthand why binary-heavy projects require a different approach to version control —
-                a real-world constraint that many developers don't encounter until they hit it.
+                Unreal Engine has a steep learning curve. Starting with a structured Udemy course gave me a
+                foundation, but real progress came from experimenting and breaking things on my own — understanding
+                how the engine manages assets, how the renderer works, and how C++ classes integrate with Blueprint
+                inheritance.
               </p>
               <h3>Scope management as a solo developer</h3>
               <p>
@@ -246,10 +239,10 @@
             <div class="cs-section">
               <h2>Next Steps</h2>
               <ul>
-                <li>Complete the core gameplay loop (a fully playable first level)</li>
-                <li>Add audio design — ambient sounds and feedback effects</li>
-                <li>Polish player feedback (hit reactions, UI indicators)</li>
-                <li>Package and record a full gameplay demo video</li>
+                <li>Expand the world with more areas, assets, and environmental detail</li>
+                <li>Add more gameplay features and objectives for the player to complete</li>
+                <li>Implement a main menu and save system</li>
+                <li>Polish player feedback (sound, camera, UI indicators)</li>
                 <li>Explore packaging for Windows distribution</li>
               </ul>
             </div>

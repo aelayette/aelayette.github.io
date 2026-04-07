@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
 </head>
 <body>
 
@@ -29,6 +30,10 @@
           <li><a href="../contact/">Contact</a></li>
         </ul>
       </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </div>
   </header>
 
@@ -176,7 +181,7 @@
           </div>
 
           <div class="tl-item" role="listitem">
-            <p class="tl-date">August 2024 – January 2026</p>
+            <p class="tl-date">August 2024 – February 2026</p>
             <h3>Dairy Frozen Associate</h3>
             <p class="org">Walmart, Nova Scotia</p>
             <ul style="list-style:disc; padding-left:1.25rem; color:var(--text-muted); font-size:.9rem;">
@@ -195,13 +200,13 @@
 
         <!-- Awards -->
         <div style="margin-top:3rem;">
-          <h3 style="font-size:1.1rem; color:var(--navy); margin-bottom:1.25rem;">Awards &amp; Certifications</h3>
+          <h3 class="heading-navy" style="font-size:1.1rem; margin-bottom:1.25rem;">Awards &amp; Certifications</h3>
           <div style="display:flex; flex-wrap:wrap; gap:.75rem;">
-            <div class="tag" style="padding:.5rem 1rem; font-size:.85rem;">🏆 Education Works Bursary</div>
-            <div class="tag" style="padding:.5rem 1rem; font-size:.85rem;">🏆 Jason Connell Memorial Award</div>
-            <div class="tag" style="padding:.5rem 1rem; font-size:.85rem;">🏆 Lion's Club Bursary</div>
-            <div class="tag" style="padding:.5rem 1rem; font-size:.85rem;">✅ WHMIS Certified</div>
-            <div class="tag" style="padding:.5rem 1rem; font-size:.85rem;">✅ Cisco Certification</div>
+            <div class="tag" style="padding:.5rem 1rem; font-size:.85rem;">Education Works Bursary</div>
+            <div class="tag" style="padding:.5rem 1rem; font-size:.85rem;">Jason Connell Memorial Award</div>
+            <div class="tag" style="padding:.5rem 1rem; font-size:.85rem;">Lion's Club Bursary</div>
+            <div class="tag" style="padding:.5rem 1rem; font-size:.85rem;">WHMIS Certified</div>
+            <div class="tag" style="padding:.5rem 1rem; font-size:.85rem;">Cisco Certification</div>
           </div>
         </div>
       </div>

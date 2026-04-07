@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
 </head>
 <body>
 
@@ -29,6 +30,10 @@
           <li><a href="../contact/">Contact</a></li>
         </ul>
       </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </div>
   </header>
 
@@ -51,10 +56,10 @@
 
         <!-- PDF download -->
         <div class="resume-pdf-placeholder">
-          <div class="pdf-icon">📄</div>
+          <div class="pdf-icon" style="font-size:2rem; margin-bottom:1rem; font-weight:700; letter-spacing:.06em;">PDF</div>
           <h2 style="font-size:1.1rem; margin-bottom:.5rem;">Download Full Resume (PDF)</h2>
           <a href="../assets/resume/Kael_Payette_Resume.pdf" class="btn btn-primary" download>
-            ⬇ Download Resume PDF
+            Download Resume PDF
           </a>
         </div>
 
@@ -101,37 +106,39 @@
           <div class="resume-entry">
             <div class="resume-entry-header">
               <h3>S.I.R.E. — Structured Incident Response Engine</h3>
-              <span class="date">Jan – Apr 2025</span>
+              <span class="date">Jan 2026 – present</span>
             </div>
-            <p class="org">Capstone Team Project — NSCC IT Showcase · <a href="https://aelayette.github.io/sire-simulator/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a></p>
+            <p class="org">Capstone Team Project — 2026 NSCC IT Showcase · <a href="https://aelayette.github.io/sire-simulator/" target="_blank" rel="noopener noreferrer">Live Demo</a></p>
             <ul>
               <li>Created and maintained team GitHub repository; established branching and PR conventions</li>
-              <li>Authored technical poster, communications plan, and project documentation</li>
+              <li>Created and maintained Jira board; tracked tasks, progress, and blockers</li>
+              <li>Authored technical poster, communications plan, presentations, and project documentation</li>
               <li>Coordinated team standups; tracked blockers to resolution</li>
-              <li>Led QA and testing; co-presented at NSCC IT Showcase</li>
+              <li>Co-presented at 2026 NSCC IT Showcase</li>
               <li>Stack: React, Vite, MUI, React Router, Node.js, Express, Socket.IO, Docker</li>
             </ul>
           </div>
           <div class="resume-entry">
             <div class="resume-entry-header">
               <h3>Deserted — Unreal Engine 5 Game</h3>
-              <span class="date">2024 – Present</span>
+              <span class="date">Jan 2026 – present</span>
             </div>
             <p class="org">Personal Project — Solo</p>
             <ul>
-              <li>Designing and developing a game in Unreal Engine 5 (C++ + Blueprints)</li>
-              <li>Custom level design, player mechanics, and game-state management</li>
+              <li>Designing and developing a game in Unreal Engine 5.0.3 (C++ + Blueprints)</li>
+              <li>Custom level design, player pawn mechanics, and gameplay management</li>
+              <li>Started following a Udemy course; continued independently</li>
             </ul>
           </div>
           <div class="resume-entry">
             <div class="resume-entry-header">
               <h3>Elite Bake Shop App</h3>
-              <span class="date">2024</span>
+              <span class="date">Nov 2025</span>
             </div>
             <p class="org">Android — Solo</p>
             <ul>
-              <li>Built an Android ordering app with Kotlin and Jetpack Compose</li>
-              <li>Local data persistence via SQLite; full ordering and history flow</li>
+              <li>Built an Android ordering app with Kotlin and Jetpack Compose for a mobile dev final</li>
+              <li>Local data persistence via SQLite; full ordering and history flow with no cloud services</li>
             </ul>
           </div>
         </div>
@@ -142,7 +149,7 @@
           <div class="resume-entry">
             <div class="resume-entry-header">
               <h3>Dairy Frozen Associate</h3>
-              <span class="date">August 2024 – January 2026</span>
+              <span class="date">August 2024 – February 2026</span>
             </div>
             <p class="org">Walmart, Nova Scotia</p>
             <ul>
