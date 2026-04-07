@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
 </head>
 <body>
 
@@ -30,6 +31,10 @@
           <li><a href="../contact/">Contact</a></li>
         </ul>
       </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </div>
   </header>
 
@@ -66,11 +71,11 @@
           <div class="glance-grid">
             <div class="glance-item">
               <p class="glance-label">Status</p>
-              <p class="glance-value">🔧 Prototype / In Progress</p>
+              <p class="glance-value">Prototype / In Progress</p>
             </div>
             <div class="glance-item">
               <p class="glance-label">Timeline</p>
-              <p class="glance-value">Jan 2025 – Apr 2025</p>
+              <p class="glance-value">Jan 2026 – present</p>
             </div>
             <div class="glance-item">
               <p class="glance-label">Team Size</p>
@@ -78,7 +83,7 @@
             </div>
             <div class="glance-item">
               <p class="glance-label">My Role</p>
-              <p class="glance-value">Repo owner · Docs · QA · Coord.</p>
+              <p class="glance-value">Repo owner · Docs · Jira · Coord.</p>
             </div>
             <div class="glance-item">
               <p class="glance-label">Platform</p>
@@ -119,10 +124,10 @@
               <h3>Links</h3>
               <div class="sidebar-links">
                 <a href="https://aelayette.github.io/sire-simulator/" target="_blank" rel="noopener noreferrer">
-                  🌐 Live Demo ↗
+                  Live Demo
                 </a>
                 <a href="https://github.com/aelayette/sire-simulator" target="_blank" rel="noopener noreferrer">
-                  💻 GitHub Repo ↗
+                  GitHub Repo
                 </a>
               </div>
             </div>
@@ -178,7 +183,7 @@
                 <strong>S.I.R.E.</strong> (Structured Incident Response Engine) is a real-time, browser-based simulation
                 platform that lets teams practise structured incident-response procedures in a controlled,
                 multiplayer environment. It was built as a capstone project by a four-person team and presented
-                at the NSCC IT Showcase.
+                at the 2026 NSCC IT Showcase.
               </p>
               <p>
                 The platform connects multiple users through WebSocket rooms, assigns roles, and walks participants
@@ -207,45 +212,33 @@
               <p>On a four-person team, every role matters. Here is what I owned:</p>
               <div class="contributions-list">
                 <div class="contribution-item">
-                  <span class="contribution-icon">🗂️</span>
+                  <div class="contribution-text">
+                    <strong>Jira Board</strong>
+                    <span>Created and maintained the team Jira board; tracked tasks, progress, and blockers</span>
+                  </div>
+                </div>
+                <div class="contribution-item">
+                  <div class="contribution-text">
+                    <strong>Project Documentation</strong>
+                    <span>Authored the technical poster, communications plan, presentations, handouts, and project README</span>
+                  </div>
+                </div>
+                <div class="contribution-item">
                   <div class="contribution-text">
                     <strong>Repository Ownership</strong>
-                    <span>Created and maintained the GitHub repo; set branching conventions and merge standards</span>
+                    <span>Created and maintained the GitHub repo; set branching conventions and PR templates</span>
                   </div>
                 </div>
                 <div class="contribution-item">
-                  <span class="contribution-icon">📋</span>
-                  <div class="contribution-text">
-                    <strong>Documentation</strong>
-                    <span>Authored the technical poster, communications plan, and project README</span>
-                  </div>
-                </div>
-                <div class="contribution-item">
-                  <span class="contribution-icon">🤝</span>
                   <div class="contribution-text">
                     <strong>Team Coordination</strong>
                     <span>Ran standups, tracked blockers, and kept the team aligned on milestones</span>
                   </div>
                 </div>
                 <div class="contribution-item">
-                  <span class="contribution-icon">🔍</span>
-                  <div class="contribution-text">
-                    <strong>QA &amp; Testing</strong>
-                    <span>Wrote and executed test plans; filed and tracked bugs through to resolution</span>
-                  </div>
-                </div>
-                <div class="contribution-item">
-                  <span class="contribution-icon">🎤</span>
                   <div class="contribution-text">
                     <strong>Showcase Presentation</strong>
-                    <span>Co-presented the project at the NSCC IT Showcase to industry guests</span>
-                  </div>
-                </div>
-                <div class="contribution-item">
-                  <span class="contribution-icon">📐</span>
-                  <div class="contribution-text">
-                    <strong>Standards &amp; Process</strong>
-                    <span>Established code-review norms, commit conventions, and PR templates</span>
+                    <span>Co-presented the project at the 2026 NSCC IT Showcase to industry guests</span>
                   </div>
                 </div>
               </div>
@@ -292,13 +285,12 @@
                   <div class="evidence-img">
                     <!-- Team photo not uploaded yet — placeholder retained -->
                     <div class="evidence-placeholder">
-                      <span class="ph-icon">📸</span>
                       <span class="ph-label">Team Showcase Photo</span>
                     </div>
                   </div>
                   <div class="evidence-caption">
                     <strong>Team at NSCC IT Showcase</strong>
-                    <p>Our four-person team presenting S.I.R.E. to industry guests at the showcase.</p>
+                    <p>Our four-person team presenting S.I.R.E. to industry guests at the 2026 NSCC IT Showcase.</p>
                     <span class="evidence-proof">Proves: Teamwork · Communication · Delivery</span>
                   </div>
                 </div>
@@ -348,22 +340,17 @@
             <!-- Challenges -->
             <div class="cs-section">
               <h2>Challenges &amp; What I Learned</h2>
-              <h3>Keeping state in sync across clients</h3>
-              <p>
-                The hardest part was ensuring that all connected clients saw the same scenario state at all times.
-                We handled this by making the server the single source of truth and re-broadcasting full state
-                snapshots on every meaningful event, rather than trying to track deltas per client.
-              </p>
               <h3>Coordinating a four-person team</h3>
               <p>
                 Communication overhead was real. I learned that clear PR templates, a shared branching convention,
                 and brief but consistent standups were more effective than any single tool. Small process investments
                 paid off quickly.
               </p>
-              <h3>Documentation as a first-class deliverable</h3>
+              <h3>Documentation as a technical skill</h3>
               <p>
-                Writing the poster and comms plan forced me to articulate the architecture in plain language —
-                which in turn surfaced design gaps earlier than code review alone would have.
+                Writing the poster, comms plan, and project documents forced me to articulate the architecture
+                in plain language — which surfaced design gaps earlier than code review alone would have.
+                Good documentation is not an afterthought; it shapes how the project is understood by everyone involved.
               </p>
             </div>
 
@@ -371,7 +358,7 @@
             <div class="cs-section">
               <h2>Results &amp; Next Steps</h2>
               <ul>
-                <li>Successfully shipped and demonstrated at the NSCC IT Showcase</li>
+                <li>Successfully shipped and demonstrated at the 2026 NSCC IT Showcase</li>
                 <li>Live demo remains publicly accessible at the project URL</li>
                 <li>Received positive feedback from industry guests on real-time responsiveness</li>
               </ul>

@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
 </head>
 <body>
 
@@ -34,6 +35,10 @@
           <li><a href="contact/">Contact</a></li>
         </ul>
       </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </div>
   </header>
 
@@ -65,21 +70,17 @@
 
         <article class="flagship-card" aria-label="S.I.R.E. Incident Response Simulator">
           <div class="flagship-media" aria-hidden="true">
-            <!-- Replace with real screenshot when available -->
-            <div class="card-img-placeholder" style="color:rgba(255,255,255,.4); padding:2rem; text-align:center;">
-              <span class="placeholder-icon">🚨</span>
-              <span style="font-size:.8rem; max-width:200px; display:block;">
-                Screenshot placeholder — drop in assets/img/projects/sire/
-              </span>
-            </div>
+            <img src="assets/img/projects/sire/Home-Page.png"
+                 alt="S.I.R.E. Home Page screenshot"
+                 style="width:100%; height:100%; object-fit:cover;" />
           </div>
           <div class="flagship-body">
             <p class="flagship-label">Capstone · Team Project · Prototype</p>
             <h3>S.I.R.E. — Structured Incident Response Engine</h3>
             <p>
               A real-time, multi-user incident-response simulation platform built by a four-person team
-              for the NSCC IT showcase. I created and maintained the repository, produced project documentation,
-              coordinated the team, and led QA/testing throughout development.
+              and presented at the 2026 NSCC IT Showcase. I set up and maintained the Jira board,
+              created project documents, managed the repository, and coordinated the team.
             </p>
             <div class="card-tags" style="margin-bottom:1.5rem;">
               <span class="tag">React</span>
@@ -90,8 +91,8 @@
               <span class="tag tag-web">Web App</span>
             </div>
             <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-              <a href="projects/sire.html" class="btn btn-primary">Read Case Study →</a>
-              <a href="https://aelayette.github.io/sire-simulator/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Live Demo ↗</a>
+              <a href="projects/sire.html" class="btn btn-primary">View Project</a>
+              <a href="https://aelayette.github.io/sire-simulator/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Live Demo</a>
             </div>
           </div>
         </article>
@@ -123,7 +124,7 @@
                 <span class="tag">C++</span>
                 <span class="tag">Blueprints</span>
               </div>
-              <a href="projects/birdgame.html" class="card-link">View case study →</a>
+              <a href="projects/birdgame.html" class="card-link">View Project</a>
             </div>
           </article>
 
@@ -145,7 +146,7 @@
                 <span class="tag">Jetpack Compose</span>
                 <span class="tag">SQLite</span>
               </div>
-              <a href="projects/cake-app.html" class="card-link">View case study →</a>
+              <a href="projects/cake-app.html" class="card-link">View Project</a>
             </div>
           </article>
 

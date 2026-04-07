@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
 </head>
 <body>
 
@@ -29,6 +30,10 @@
           <li><a href="../contact/">Contact</a></li>
         </ul>
       </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </div>
   </header>
 
@@ -76,7 +81,6 @@
         <div class="growth-grid">
 
           <div class="growth-card">
-            <div class="g-icon">🤝</div>
             <h3>Team Collaboration</h3>
             <p>
               Working on S.I.R.E. with a four-person team taught me that process matters as much as code.
@@ -86,7 +90,6 @@
           </div>
 
           <div class="growth-card">
-            <div class="g-icon">📱</div>
             <h3>Android Development</h3>
             <p>
               Building the Elite Bake Shop App from scratch in Jetpack Compose — including managing local SQLite data
@@ -95,7 +98,6 @@
           </div>
 
           <div class="growth-card">
-            <div class="g-icon">🌐</div>
             <h3>Real-time Web Systems</h3>
             <p>
               Implementing Socket.IO with namespaced rooms for S.I.R.E. pushed me to think about server state,
@@ -105,7 +107,6 @@
           </div>
 
           <div class="growth-card">
-            <div class="g-icon">📋</div>
             <h3>Technical Documentation</h3>
             <p>
               Writing the S.I.R.E. project poster and communications plan taught me that good documentation
@@ -115,20 +116,20 @@
           </div>
 
           <div class="growth-card">
-            <div class="g-icon">🎮</div>
             <h3>Game Development Fundamentals</h3>
             <p>
-              Learning Unreal Engine 5 independently — including the C++/Blueprint split, the asset pipeline,
-              and large-binary version control — has built genuine resilience for navigating complex, poorly-documented tools.
+              Learning Unreal Engine 5 independently — starting with a structured course then continuing on
+              my own — built genuine resilience for navigating complex, poorly-documented tools and large,
+              unfamiliar codebases.
             </p>
           </div>
 
           <div class="growth-card">
-            <div class="g-icon">🔍</div>
-            <h3>QA &amp; Testing Mindset</h3>
+            <h3>Local Database Design</h3>
             <p>
-              Leading QA on S.I.R.E. changed how I write code. I now think about edge cases, error states,
-              and failure modes while building — not only when something breaks.
+              Designing the SQLite schema for the Elite Bake Shop App — writing raw SQL for schema creation,
+              insertion, and querying — gave me a hands-on understanding of relational database design
+              and what ORMs are actually doing under the hood.
             </p>
           </div>
 
@@ -145,7 +146,7 @@
         <div style="display:flex; flex-direction:column; gap:1.5rem;">
 
           <div class="sidebar-card">
-            <h3 style="font-size:1rem; color:var(--navy); margin-bottom:.75rem;">Automated Testing</h3>
+            <h3 class="heading-navy" style="font-size:1rem; margin-bottom:.75rem;">Automated Testing</h3>
             <p style="font-size:.9rem; color:var(--text-muted); margin-bottom:.75rem;">
               I've done manual testing and written informal test plans, but I haven't built a systematic
               automated test suite (unit, integration, or end-to-end) for any project yet.
@@ -158,19 +159,19 @@
           </div>
 
           <div class="sidebar-card">
-            <h3 style="font-size:1rem; color:var(--navy); margin-bottom:.75rem;">Architecture Patterns</h3>
+            <h3 class="heading-navy" style="font-size:1rem; margin-bottom:.75rem;">Production Deployment</h3>
             <p style="font-size:.9rem; color:var(--text-muted); margin-bottom:.75rem;">
-              I understand MVVM conceptually but haven't applied it rigorously in a complete project.
-              The Elite Bake Shop App's data and UI concerns are not cleanly separated.
+              I've used GitHub Pages and Docker in coursework, but I haven't deployed a full production
+              application with proper environment management, secrets handling, or reliability monitoring.
             </p>
             <p style="font-size:.875rem; color:var(--text);">
-              <strong>Plan:</strong> Refactor the Elite Bake Shop App with a proper MVVM structure and Room ORM
-              as a deliberate learning exercise — and document the before/after as part of the case study.
+              <strong>Plan:</strong> Deploy a personal project to a cloud provider (Railway, Render, or
+              similar) with proper environment config and uptime visibility.
             </p>
           </div>
 
           <div class="sidebar-card">
-            <h3 style="font-size:1rem; color:var(--navy); margin-bottom:.75rem;">CI/CD Pipelines</h3>
+            <h3 class="heading-navy" style="font-size:1rem; margin-bottom:.75rem;">CI/CD Pipelines</h3>
             <p style="font-size:.9rem; color:var(--text-muted); margin-bottom:.75rem;">
               I've used GitHub Actions at a basic level but haven't configured a full CI/CD pipeline
               with automated build, test, and deploy stages.
@@ -192,23 +193,23 @@
         <h2 class="section-title" id="next-heading">Next 3 Months</h2>
         <ul style="list-style:none; display:flex; flex-direction:column; gap:.9rem;">
           <li style="display:flex; gap:.75rem; align-items:flex-start;">
-            <span style="font-size:1.1rem; flex-shrink:0;">📱</span>
+            <span style="flex-shrink:0; color:var(--accent-dark); font-weight:700;">—</span>
             <span>Refactor Elite Bake Shop App with MVVM + Room ORM; add JUnit tests for the data layer</span>
           </li>
           <li style="display:flex; gap:.75rem; align-items:flex-start;">
-            <span style="font-size:1.1rem; flex-shrink:0;">🎮</span>
-            <span>Complete Deserted's core loop; record and publish a gameplay demo video</span>
+            <span style="flex-shrink:0; color:var(--accent-dark); font-weight:700;">—</span>
+            <span>Continue expanding Deserted — add more features, areas, and objectives to move toward a complete gameplay loop</span>
           </li>
           <li style="display:flex; gap:.75rem; align-items:flex-start;">
-            <span style="font-size:1.1rem; flex-shrink:0;">🔧</span>
+            <span style="flex-shrink:0; color:var(--accent-dark); font-weight:700;">—</span>
             <span>Set up a GitHub Actions CI/CD pipeline for at least one personal project</span>
           </li>
           <li style="display:flex; gap:.75rem; align-items:flex-start;">
-            <span style="font-size:1.1rem; flex-shrink:0;">📸</span>
-            <span>Replace all placeholder images in this portfolio with real screenshots and photos</span>
+            <span style="flex-shrink:0; color:var(--accent-dark); font-weight:700;">—</span>
+            <span>Document and showcase additional completed projects as case studies in this portfolio</span>
           </li>
           <li style="display:flex; gap:.75rem; align-items:flex-start;">
-            <span style="font-size:1.1rem; flex-shrink:0;">💼</span>
+            <span style="flex-shrink:0; color:var(--accent-dark); font-weight:700;">—</span>
             <span>Apply to junior developer positions and document learnings from interview prep</span>
           </li>
         </ul>

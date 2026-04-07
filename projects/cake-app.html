@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
 </head>
 <body>
 
@@ -29,6 +30,10 @@
           <li><a href="../contact/">Contact</a></li>
         </ul>
       </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </div>
   </header>
 
@@ -62,7 +67,11 @@
           <div class="glance-grid">
             <div class="glance-item">
               <p class="glance-label">Status</p>
-              <p class="glance-value">✅ Completed</p>
+              <p class="glance-value">Completed</p>
+            </div>
+            <div class="glance-item">
+              <p class="glance-label">Timeline</p>
+              <p class="glance-value">Nov 2025 – Completed</p>
             </div>
             <div class="glance-item">
               <p class="glance-label">Platform</p>
@@ -90,7 +99,6 @@
                 <span class="tag tag-dark">Kotlin</span>
                 <span class="tag tag-dark">Jetpack Compose</span>
                 <span class="tag tag-dark">SQLite</span>
-                <span class="tag tag-dark">Android Studio</span>
               </div>
             </div>
           </div>
@@ -136,38 +144,35 @@
             <div class="cs-section">
               <h2>Project Overview</h2>
               <p>
-                The Elite Bake Shop App is an Android application that allows users to browse a product catalogue,
-                configure a custom cake order (size, flavour, toppings), and submit it for processing. All order
-                data is stored locally using SQLite, making the app fully functional offline.
+                The Elite Bake Shop App is an Android application that allows users to browse a dessert
+                product catalogue, configure a custom cake order (amount and flavour), and submit it for
+                processing. All order data is stored locally using SQLite, making the app fully functional
+                offline with no cloud services.
               </p>
               <p>
-                I built this project to deepen my understanding of Android development with Jetpack Compose
-                and to practise working with a structured local database from the ground up — without relying
-                on higher-level abstractions.
+                I built this project for a mobile development final, which deepened my understanding of
+                Android development with Jetpack Compose and gave me practice working with a structured
+                local database from the ground up, without relying on higher-level abstractions.
               </p>
             </div>
 
             <div class="cs-section">
-              <h2>Problem &amp; Goal</h2>
+              <h2>Goal</h2>
               <p>
                 I wanted to build a complete, realistic mobile app flow: browsing items, selecting options,
                 validating input, and persisting data across sessions — without using cloud services.
+                The focus was on local SQLite storage: writing the schema, queries, and cursor management directly.
               </p>
-              <div class="highlight-box">
-                <strong>Constraint I set myself:</strong> No external APIs — data must live entirely on-device,
-                using SQLite managed directly through Android's database APIs. This forced me to understand
-                schema design, queries, and cursor management at a lower level.
-              </div>
             </div>
 
             <div class="cs-section">
               <h2>What I Built</h2>
               <ul>
-                <li>Product listing screen with categories and item details (Jetpack Compose)</li>
-                <li>Custom order builder — size, flavour, and topping selections with validation</li>
-                <li>Order confirmation and summary view</li>
-                <li>Order history screen persisted in SQLite across app sessions</li>
-                <li>Basic navigation flow using Compose navigation</li>
+                <li>Product listing screen (menu) with item name and details (Jetpack Compose)</li>
+                <li>Custom order builder (checkout) with items and amount selection with validation</li>
+                <li>Order confirmation and total price summary view</li>
+                <li>Order history persisted in SQLite across app sessions</li>
+                <li>Basic navigation flow using Compose navigation (Home → Menu → Checkout)</li>
               </ul>
             </div>
 
