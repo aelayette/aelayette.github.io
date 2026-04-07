@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Cake Ordering App — Android case study by Kael Payette. Kotlin, Jetpack Compose, SQLite." />
+  <meta name="description" content="Elite Bake Shop App — Android case study by Kael Payette. Kotlin, Jetpack Compose, SQLite. Solo project, completed." />
   <meta name="author" content="Kael Payette" />
-  <title>Cake App — Kael Payette</title>
+  <title>Elite Bake Shop App — Kael Payette</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -41,9 +41,9 @@
           <span aria-hidden="true">/</span>
           <a href="../projects/">Projects</a>
           <span aria-hidden="true">/</span>
-          <span aria-current="page">Cake App</span>
+          <span aria-current="page">Elite Bake Shop App</span>
         </nav>
-        <h1 id="cs-heading">Cake Ordering App</h1>
+        <h1 id="cs-heading">Elite Bake Shop App</h1>
         <p class="hero-sub">Android mobile app — Kotlin, Jetpack Compose, and SQLite local persistence</p>
         <div class="hero-tags">
           <span class="tag tag-dark">Mobile</span>
@@ -62,7 +62,7 @@
           <div class="glance-grid">
             <div class="glance-item">
               <p class="glance-label">Status</p>
-              <p class="glance-value">✅ Functional</p>
+              <p class="glance-value">✅ Completed</p>
             </div>
             <div class="glance-item">
               <p class="glance-label">Platform</p>
@@ -136,7 +136,7 @@
             <div class="cs-section">
               <h2>Project Overview</h2>
               <p>
-                The Cake Ordering App is an Android application that allows users to browse a product catalogue,
+                The Elite Bake Shop App is an Android application that allows users to browse a product catalogue,
                 configure a custom cake order (size, flavour, toppings), and submit it for processing. All order
                 data is stored locally using SQLite, making the app fully functional offline.
               </p>
@@ -193,36 +193,58 @@
             </div>
 
             <div class="cs-section">
-              <h2>Screenshots</h2>
-              <p>
-                Add app screenshots to <code>assets/img/projects/cake-app/</code> and
-                update the <code>src</code> attributes below.
+              <h2>App Demo Video</h2>
+              <div style="max-width:360px; margin-bottom:1.5rem;">
+                <video
+                  src="../assets/img/projects/cake-app/Menu-Search.mp4"
+                  controls
+                  style="width:100%; border-radius:var(--radius); display:block;"
+                  aria-label="Elite Bake Shop App — menu search demo recording">
+                </video>
+              </div>
+              <p style="font-size:.875rem; color:var(--text-muted);">
+                Menu search in action — browsing and filtering cake menu items.
               </p>
+            </div>
+
+            <div class="cs-section">
+              <h2>Screenshots</h2>
               <div class="evidence-gallery">
 
                 <div class="evidence-card">
                   <div class="evidence-img">
-                    <div class="evidence-placeholder">
-                      <span class="ph-icon">🍰</span>
-                      <span class="ph-label">Product Listing</span>
-                    </div>
+                    <img src="../assets/img/projects/cake-app/Home-Screen.png"
+                         alt="Elite Bake Shop App — Home Screen"
+                         style="width:100%; height:100%; object-fit:cover;" />
                   </div>
                   <div class="evidence-caption">
-                    <strong>Product Listing Screen</strong>
-                    <p>Cake catalogue with categories and item previews.</p>
+                    <strong>Home Screen</strong>
+                    <p>App landing screen with navigation and welcome content.</p>
                     <span class="evidence-proof">Proves: Compose UI · Navigation</span>
                   </div>
                 </div>
 
                 <div class="evidence-card">
                   <div class="evidence-img">
-                    <div class="evidence-placeholder">
-                      <span class="ph-icon">🎂</span>
-                      <span class="ph-label">Order Builder</span>
-                    </div>
+                    <img src="../assets/img/projects/cake-app/Menu-Screen.png"
+                         alt="Elite Bake Shop App — Menu Screen showing cake catalogue"
+                         style="width:100%; height:100%; object-fit:cover;" />
                   </div>
                   <div class="evidence-caption">
-                    <strong>Custom Order Builder</strong>
+                    <strong>Menu / Product Listing</strong>
+                    <p>Cake catalogue with categories and item previews.</p>
+                    <span class="evidence-proof">Proves: Compose UI · Data Display</span>
+                  </div>
+                </div>
+
+                <div class="evidence-card">
+                  <div class="evidence-img">
+                    <img src="../assets/img/projects/cake-app/Order-Screen.png"
+                         alt="Elite Bake Shop App — Order Screen for customising a cake order"
+                         style="width:100%; height:100%; object-fit:cover;" />
+                  </div>
+                  <div class="evidence-caption">
+                    <strong>Order Builder</strong>
                     <p>Size, flavour, and topping selection with real-time price update.</p>
                     <span class="evidence-proof">Proves: State Management · UX Design</span>
                   </div>
@@ -230,15 +252,40 @@
 
                 <div class="evidence-card">
                   <div class="evidence-img">
-                    <div class="evidence-placeholder">
-                      <span class="ph-icon">📋</span>
-                      <span class="ph-label">Order History</span>
-                    </div>
+                    <img src="../assets/img/projects/cake-app/OrderConfirmed-Screen.png"
+                         alt="Elite Bake Shop App — Order Confirmed screen"
+                         style="width:100%; height:100%; object-fit:cover;" />
                   </div>
                   <div class="evidence-caption">
-                    <strong>Order History Screen</strong>
-                    <p>Past orders retrieved from SQLite and displayed in a scrollable list.</p>
-                    <span class="evidence-proof">Proves: SQLite Persistence · Data Retrieval</span>
+                    <strong>Order Confirmed</strong>
+                    <p>Confirmation screen shown after a successful order submission.</p>
+                    <span class="evidence-proof">Proves: Full Order Flow · SQLite Persistence</span>
+                  </div>
+                </div>
+
+                <div class="evidence-card">
+                  <div class="evidence-img">
+                    <img src="../assets/img/projects/cake-app/Login-Screen-InvalidEmail.png"
+                         alt="Elite Bake Shop App — Login screen with invalid email validation"
+                         style="width:100%; height:100%; object-fit:cover;" />
+                  </div>
+                  <div class="evidence-caption">
+                    <strong>Login — Input Validation</strong>
+                    <p>Login screen showing inline error feedback for an invalid email.</p>
+                    <span class="evidence-proof">Proves: Input Validation · UX Feedback</span>
+                  </div>
+                </div>
+
+                <div class="evidence-card">
+                  <div class="evidence-img">
+                    <img src="../assets/img/projects/cake-app/Signup-Screen-IncompleteForm.png"
+                         alt="Elite Bake Shop App — Signup screen with incomplete form validation"
+                         style="width:100%; height:100%; object-fit:cover;" />
+                  </div>
+                  <div class="evidence-caption">
+                    <strong>Sign Up — Form Validation</strong>
+                    <p>Sign-up screen showing validation feedback for an incomplete form.</p>
+                    <span class="evidence-proof">Proves: Form Handling · Error States</span>
                   </div>
                 </div>
 
