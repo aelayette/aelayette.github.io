@@ -859,8 +859,9 @@ p:last-child { margin-bottom: 0; }
 
 .profile-photo {
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
+  object-position: center top;
   border-radius: var(--radius-lg);
   display: block;
 }
