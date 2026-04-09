@@ -39,17 +39,6 @@ Team capstone project focused on structured incident response training and simul
 
 ---
 
-## Local Development
-
-This is a static site.
-
-- Option A: open `index.html` directly in your browser
-- Option B: run a simple local server (recommended for testing):
-  - VS Code “Live Server”, or
-  - `python -m http.server`
-
----
-
 ## Contact
 
 - **LinkedIn:** https://www.linkedin.com/in/kael-payette-7b0a54336/
